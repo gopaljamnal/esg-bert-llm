@@ -12,7 +12,7 @@ function App() {
     e.preventDefault();
     setIsClassifying(true);  // Start processing, hide inputs
     try {
-      const response = await axios.post('http://127.0.0.1:5000/classify', { url });
+      const response = await axios.post('/classify', { url });
       const result = response.data.score;
       console.log(result);
 
