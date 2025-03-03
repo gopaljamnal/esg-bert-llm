@@ -134,7 +134,7 @@ function App() {
       )}
 
       <footer className="footer" style={{ marginTop: '30px', color: '#777' }}>
-        <p>&copy; 2025 ESG Classification Tool. All rights reserved.</p>
+        <p>&copy; 2025 Gopal Jamnal - ESG Classification Tool. All rights reserved.</p>
       </footer>
     </div>
   );
