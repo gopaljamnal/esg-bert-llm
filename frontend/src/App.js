@@ -10,9 +10,11 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Sending request to backend...");
     setIsClassifying(true);  // Start processing, hide inputs
     try {
-      const response = await axios.post('/classify', { url });
+      const response = await axios.post('http://127.0.0.1:5000/classify', { url });
+      console.log("Response received:", response.data);
       const result = response.data.score;
       console.log(result);
 
